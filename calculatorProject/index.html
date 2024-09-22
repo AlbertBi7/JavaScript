@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css" />
+    
+</head>
+<body >
+    <div class="calculator">
+        <div class="calculator-secondary-display" id="secondaryDisplay">0</div>
+        <div class="calculator-display" id="display">0</div>
+        <div class="calculator-buttons">
+          
+          <button class="calculator-button operator" onclick="updateDisplay('÷')">÷</button>
+      
+          <button class="calculator-button" onclick="updateDisplay('7')">7</button>
+          <button class="calculator-button" onclick="updateDisplay('8')">8</button>
+          <button class="calculator-button" onclick="updateDisplay('9')">9</button>
+          <button class="calculator-button operator" onclick="updateDisplay('×')">×</button>
+      
+          <button class="calculator-button" onclick="updateDisplay('4')">4</button>
+          <button class="calculator-button" onclick="updateDisplay('5')">5</button>
+          <button class="calculator-button" onclick="updateDisplay('6')">6</button>
+          <button class="calculator-button operator" onclick="updateDisplay('-')">−</button>
+      
+          <button class="calculator-button" onclick="updateDisplay('1')">1</button>
+          <button class="calculator-button" onclick="updateDisplay('2')">2</button>
+          <button class="calculator-button" onclick="updateDisplay('3')">3</button>
+          <button class="calculator-button operator" onclick="updateDisplay('+')">+</button>
+      
+          <button class="calculator-button" onclick="updateDisplay('decimal')">.</button>
+          <button class="calculator-button"  onclick="updateDisplay('0')">0</button>
+          <button class="calculator-button" onclick="updateDisplay('negative-value')">±</button>
+
+          <button class="calculator-button clear" style="width: 49%;" onclick="clearDisplay()">C</button>
+         
+          <button class="calculator-button equals" style="width: 49%;" onclick="updateDisplay('equals')">=</button>
+        </div>
+      </div>
+      
+    
+</body>
+<script src="cal.js"></script>
+</html>
